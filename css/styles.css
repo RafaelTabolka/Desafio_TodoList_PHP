@@ -1,0 +1,185 @@
+/* Estilos gerais */
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+}
+
+p,
+li {
+  font-size: 30px;
+}
+
+button{
+  background-color: rgb(71, 71, 180);
+  cursor: pointer;
+  color: #fefefe;
+  border: 2px solid rgb(71, 71, 180);
+  border-radius: 4px;
+  padding: 10px 10px;
+  transition: 0.5s;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: rgb(36, 36, 183);
+  border: 2px solid rgb(36, 36, 183);
+}
+
+body {
+  background-image: url("../img/tarefas.jpg");
+  background-size: cover;
+  background-position: unset;
+}
+
+li {
+  list-style: none;
+}
+
+.form-display {
+  display: none; 
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+}
+
+#title-todo {
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Todo */
+.input-box {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.input-box input,
+.input-box-edit input {
+  font-size: 25px;
+}
+
+.form input,
+#form-edit input {
+  width: 80%;
+  height: 20px;
+  padding: 23px 23px;
+  margin: 5px 5px;
+}
+
+
+
+/* Edit form */
+#title-todo-edit {
+  text-align: center;
+  font-size: 60px;
+}
+
+/* Tarefas */
+#data {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0 5px;
+}
+
+.itens-todo {
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  margin: 5px 2px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: #efe5ff;
+}
+
+.itens-todo span {
+  flex: 1;
+}
+
+#check,
+#update,
+#delete {
+  margin: 0px 15px 0px 5px;
+}
+
+.done-task {
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+/* Footer */
+.footer {
+  padding: 2px;
+}
+
+.footer #total-task {
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+}
+
+.footer #clear,
+#btn-cancel-edit {
+  margin: 10px 10px;
+  width: 150px;
+  font-size: 25px;
+}
+
+.without-task {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 322px) {
+  .input-box input {
+    font-size: 15px;
+  }
+
+  .form input {
+    width: 70%;
+    height: 20px;
+    padding: 15px 15px;
+    margin: 5px 5px;
+  }
+
+  #title-todo {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  button {
+    padding: 3px 3px;
+    font-size: 15px;
+  }
+
+  .itens-todo {
+    padding: 0.5px;
+  }
+
+  p,
+  li {
+    font-size: 20px;
+  }
+
+  .footer #clear {
+    margin: 5px 5px;
+    width: 100px;
+    font-size: 15px;
+  }
+
+  #update {
+    margin: 0px 8px 0px 5px;
+  }
+}
